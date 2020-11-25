@@ -1,0 +1,31 @@
+Bagian step folder frontend:
+  @catatan: 
+  Copy kan bagian ini (beserta anaknya), ke folder frontend untuk tracking step di git
+  1. Buat file TODO di frontend, trs copykan bagian ini.
+  2. Ke source control (ctrl+shift+G)
+  3. Bagian frontend, stage change file TODO (tanda plus di samping file TODO)
+  4. masukkan message yang sesuai, @misal: Membuat file TODO
+  5. ctrl + Enter untuk commit perubahan
+  Step 0:
+    Konfigurasi CodeIgniter:
+      Database:
+        ☐ Ke folder frontend
+        ☐ Ubah file env menjadi .env
+        ☐ Buka file .env
+        ☐ Ubah @line: '# CI_ENVIRONMENT = production' menjadi: CI_ENVIRONMENT = development @catatan: kita ubah jadi development dulu supaya kalo ada error jadi nampak, kalo production error nya di silent jadi gatau kita nanti.
+        ☐ Buka xampp dengan Run as Administrator
+        ☐ Start Apache dan MySQL
+        ☐ ke browser, lalu ke @url: localhost/phpmyadmin
+        ☐ Buat database untuk app frontend ini, terserah namanya apa. misal: gdps_frontend
+        ☐ Kalo udh berhasil buat, ke VSCode lagi, ke file .env yang tadi, rubah bagian # database.default.hostname = localhost ke bawah:
+
+          @perubahan:
+            # database.default.hostname = localhost , @menjadi: database.default.hostname = localhost
+            # database.default.database = ci4, @menjadi: database.default.database = @namaDatabaseYangTdDiBuat:misal gdps_frontend
+            # database.default.username = root @menjadi: database.default.username = @usernamePhpmyAdmin:misal root
+            # database.default.password = root @menjadi: database.default.password = @password:misal kosong
+            # database.default.DBDriver = MySQLi @menjadi: database.default.DBDriver = MySQLi
+      BaseURL:
+        ☐ Sekarang ke file app\Config\App.php
+        ☐ Rubah @line: public $baseURL = 'http://localhost:8080/'; @menjadi: public $baseURL = 'http://frontend.gdps.localhost:8080/'; @catatan: frontend.gdps.localhost adalah ServerName yang kita set saat membuat Virtual Host Apache
+        ☐ Rubah @line: public $indexPage = 'index.php'; @menjadi: public $indexPage = '';
