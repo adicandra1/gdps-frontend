@@ -32,6 +32,11 @@ Bagian step folder frontend:
         ✔ Kasih message commit yang sesuai: misal: Step0: Konfigurasi Codeigniter: Database @done(20-11-25 20:25)
         ✔ ctrl + Enter untuk commit @done(20-11-25 20:25)
       BaseURL:
-        ☐ Sekarang ke file app\Config\App.php
-        ☐ Rubah @line: public $baseURL = 'http://localhost:8080/'; @menjadi: public $baseURL = 'http://frontend.gdps.localhost:8080/'; @catatan: frontend.gdps.localhost adalah ServerName yang kita set saat membuat Virtual Host Apache
-        ☐ Rubah @line: public $indexPage = 'index.php'; @menjadi: public $indexPage = '';
+        ✔ Sekarang ke file app\Config\App.php @done(20-11-25 20:29)
+        ✔ Rubah @line: public $baseURL = 'http://localhost:8080/'; @menjadi: public $baseURL = 'http://frontend.gdps.localhost:8080/'; @catatan: frontend.gdps.localhost adalah ServerName yang kita set saat membuat Virtual Host Apache @done(20-11-25 20:29)
+        ✔ Rubah @line: public $indexPage = 'index.php'; @menjadi: public $indexPage = ''; @done(20-11-25 20:29)
+        ✔ kalo udh, checklist (alt+D) bagian anak BaseURL @done(20-11-25 20:29)
+        ✔ Ke source control sidebar kayak tadi @done(20-11-25 20:29)
+        ✔ bagian frontend, Stage Change TODO dan App.php @done(20-11-25 20:29)
+        ✔ Message commit: Step0: Konfigurasi Codeigniter: BaseURL @done(20-11-25 20:29)
+        ✔ ctrl + Enter untuk commit @done(20-11-25 20:29)
