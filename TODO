@@ -9,15 +9,15 @@ Bagian step folder frontend:
   Step 0:
     Konfigurasi CodeIgniter:
       Database:
-        ☐ Ke folder frontend
-        ☐ Ubah file env menjadi .env
-        ☐ Buka file .env
-        ☐ Ubah @line: '# CI_ENVIRONMENT = production' menjadi: CI_ENVIRONMENT = development @catatan: kita ubah jadi development dulu supaya kalo ada error jadi nampak, kalo production error nya di silent jadi gatau kita nanti.
-        ☐ Buka xampp dengan Run as Administrator
-        ☐ Start Apache dan MySQL
-        ☐ ke browser, lalu ke @url: localhost/phpmyadmin
-        ☐ Buat database untuk app frontend ini, terserah namanya apa. misal: gdps_frontend
-        ☐ Kalo udh berhasil buat, ke VSCode lagi, ke file .env yang tadi, rubah bagian # database.default.hostname = localhost ke bawah:
+        ✔ Ke folder frontend @done(20-11-25 20:25)
+        ✔ Ubah file env menjadi .env @done(20-11-25 20:25)
+        ✔ Buka file .env @done(20-11-25 20:25)
+        ✔ Ubah @line: '# CI_ENVIRONMENT = production' menjadi: CI_ENVIRONMENT = development @catatan: kita ubah jadi development dulu supaya kalo ada error jadi nampak, kalo production error nya di silent jadi gatau kita nanti. @done(20-11-25 20:25)
+        ✔ Buka xampp dengan Run as Administrator @done(20-11-25 20:25)
+        ✔ Start Apache dan MySQL @done(20-11-25 20:25)
+        ✔ ke browser, lalu ke @url: localhost/phpmyadmin @done(20-11-25 20:25)
+        ✔ Buat database untuk app frontend ini, terserah namanya apa. misal: gdps_frontend @done(20-11-25 20:25)
+        ✔ Kalo udh berhasil buat, ke VSCode lagi, ke file .env yang tadi, rubah bagian # database.default.hostname = localhost ke bawah: @done(20-11-25 20:25)
 
           @perubahan:
             # database.default.hostname = localhost , @menjadi: database.default.hostname = localhost
@@ -25,6 +25,12 @@ Bagian step folder frontend:
             # database.default.username = root @menjadi: database.default.username = @usernamePhpmyAdmin:misal root
             # database.default.password = root @menjadi: database.default.password = @password:misal kosong
             # database.default.DBDriver = MySQLi @menjadi: database.default.DBDriver = MySQLi
+
+        ✔ Kalo udh, di checklist apa yang udh km lakukan pake shortcut Alt + D. Kayak gini @screenshot: '../persiapan/screenshot/StageChangeFrontendTODOandENV.PNG @done(20-11-25 20:25)
+        ✔ Kalo udh ke Source Control Sidebar (ctrl + shift + G (kalo pake Ekstensi GitLens mencet G nya 2kali)) @done(20-11-25 20:25)
+        ✔ Di bagian frontend, Stage Change File TODO dan env, lihat @screenshot: '../persiapan/screenshot/ToggleDoneTODO+.PNG' @done(20-11-25 20:25)
+        ✔ Kasih message commit yang sesuai: misal: Step0: Konfigurasi Codeigniter: Database @done(20-11-25 20:25)
+        ✔ ctrl + Enter untuk commit @done(20-11-25 20:25)
       BaseURL:
         ☐ Sekarang ke file app\Config\App.php
         ☐ Rubah @line: public $baseURL = 'http://localhost:8080/'; @menjadi: public $baseURL = 'http://frontend.gdps.localhost:8080/'; @catatan: frontend.gdps.localhost adalah ServerName yang kita set saat membuat Virtual Host Apache
