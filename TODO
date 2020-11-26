@@ -55,11 +55,12 @@ Bagian step folder frontend:
         ✔ kasih message yang relevan (misal: Step1: LandingPage: View) @done(20-11-26 10:20)
         ✔ commit dengan ctrl + Enter @done(20-11-26 10:20)
       Assets(js/css):
-        ☐ View landing kemarin juga menggunakan file js dan css
-        ☐ copy semua file js dan css di folder public/assets/landing (kalo folder assets dan landing belum ada, mohon dibuat dulu)
-        ☐ kalo udh checklist bagian langkah View ini
-        ☐ Stage change file yang anda tambahkan tadi bersama file TODO ini,
-        ☐ kasih message yang relevan (misal: Step1: LandingPage: Assets)
-        ☐ commit dengan ctrl + Enter
+        ✔ View landing kemarin juga menggunakan file js dan css @done(20-11-26 17:06)
+        ✔ Karena folder assets yang kemarin terlalu besar, maka sudah aku compress, coba di download @url: https://drive.google.com/file/d/1nQJ8-3I4CeLYA7tLruf-Trfumiiwl10i/view?usp=sharing @done(20-11-26 17:06)
+        ✔ extract zip di folder public/assets/ (kalo folder assets belum ada, mohon dibuat dulu) @screenshot: '../persiapan/screenshot/AddAssetsFrontend.PNG' @done(20-11-26 17:06)
+        ✔ kalo udh checklist bagian langkah Assets ini @done(20-11-26 17:06)
+        ✔ Stage change file yang anda tambahkan tadi bersama file TODO ini, @screenshot: '../persiapan/screenshot/StageAllChangesAssetsFrontend.PNG' @done(20-11-26 17:41)
+        ✔ kasih message yang relevan (misal: Step1: LandingPage: Assets) @done(20-11-26 17:06)
+        ✔ commit dengan ctrl + Enter @done(20-11-26 17:06)
       Controller:
-        ☐ Untuk tutorial untuk Controller LandingPage, bisa dilihat di dokumen '../persiapan/dokumen/LandingPageTutorial.docx
+        ☐ Untuk tutorial untuk Controller LandingPage, bisa dilihat di video youtube: @url: 
