@@ -63,4 +63,12 @@ Bagian step folder frontend:
         ✔ kasih message yang relevan (misal: Step1: LandingPage: Assets) @done(20-11-26 17:06)
         ✔ commit dengan ctrl + Enter @done(20-11-26 17:06)
       Controller:
-        ☐ Untuk tutorial untuk Controller LandingPage, bisa dilihat di video youtube: @url: 
+        ✔ Penjelasan untuk Controller LandingPage, bisa dilihat di video youtube: @url: @done(20-11-27 00:57)
+        ✔ Buat File LandingPage.php di app/Controllers/ @done(20-11-27 00:57)
+        ✔ Template isinya bisa dilihat di @file: '../persiapan/dokumen/codeSnipplets/Controller/LandingPage.php @done(20-11-27 00:57)
+        ✔ Copy isi file tersebut ke file yang tadi dibuat @done(20-11-27 00:57)
+        ✔ Jika sudah melihat penjelasan dan sudah copy isi file, maka: @done(20-11-27 00:57)
+        ✔ Checklist bagian ini @done(20-11-27 00:57)
+        ✔ stage change file yang berubah @done(20-11-27 00:57)
+        ✔ Kasih message, trs commit @done(20-11-27 00:57)
+
