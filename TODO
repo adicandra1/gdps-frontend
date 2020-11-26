@@ -31,6 +31,7 @@ Bagian step folder frontend:
         ✔ Di bagian frontend, Stage Change File TODO dan env, lihat @screenshot: '../persiapan/screenshot/ToggleDoneTODO+.PNG' @done(20-11-25 20:25)
         ✔ Kasih message commit yang sesuai: misal: Step0: Konfigurasi Codeigniter: Database @done(20-11-25 20:25)
         ✔ ctrl + Enter untuk commit @done(20-11-25 20:25)
+
       BaseURL:
         ✔ Sekarang ke file app\Config\App.php @done(20-11-25 20:29)
         ✔ Rubah @line: public $baseURL = 'http://localhost:8080/'; @menjadi: public $baseURL = 'http://frontend.gdps.localhost:8080/'; @catatan: frontend.gdps.localhost adalah ServerName yang kita set saat membuat Virtual Host Apache @done(20-11-25 20:29)
@@ -40,3 +41,25 @@ Bagian step folder frontend:
         ✔ bagian frontend, Stage Change TODO dan App.php @done(20-11-25 20:29)
         ✔ Message commit: Step0: Konfigurasi Codeigniter: BaseURL @done(20-11-25 20:29)
         ✔ ctrl + Enter untuk commit @done(20-11-25 20:29)
+
+  Step 1:
+    Landing Page:
+      View:
+        ✔ Copy view landing yang sudah dibuat ke folder app/Views @done(20-11-26 10:23)
+          @catatan: sebenarnya hampir sama kayak codeigniter 3, tp ini lebih rapi gitulah
+        ✔ Mungkin dikumpulin jadi satu folder view ladingnya @done(20-11-26 10:23)
+        ✔ Jadi kita buat folder di baru di app/Views , misal namanya: LandingPage, jadi nanti struktunya: app/Views/LandingPage/ @done(20-11-26 10:23)
+        ✔ Isikan semua view landing disitu. lihat @screenshot: '../persiapan/screenshot/LandingViewAdd.PNG' @done(20-11-26 10:23)
+        ✔ kalo udh checklist bagian langkah View ini @screenshot: '../persiapan/screenshot/ChecklistStep1LandingView.PNG' @done(20-11-26 10:23)
+        ✔ Stage change file yang anda tambahkan tadi bersama file TODO ini, @screenshot: '../persiapan/screenshot/StageChangeLandingViews.PNG' @done(20-11-26 10:23)
+        ✔ kasih message yang relevan (misal: Step1: LandingPage: View) @done(20-11-26 10:20)
+        ✔ commit dengan ctrl + Enter @done(20-11-26 10:20)
+      Assets(js/css):
+        ☐ View landing kemarin juga menggunakan file js dan css
+        ☐ copy semua file js dan css di folder public/assets/landing (kalo folder assets dan landing belum ada, mohon dibuat dulu)
+        ☐ kalo udh checklist bagian langkah View ini
+        ☐ Stage change file yang anda tambahkan tadi bersama file TODO ini,
+        ☐ kasih message yang relevan (misal: Step1: LandingPage: Assets)
+        ☐ commit dengan ctrl + Enter
+      Controller:
+        ☐ Untuk tutorial untuk Controller LandingPage, bisa dilihat di dokumen '../persiapan/dokumen/LandingPageTutorial.docx
