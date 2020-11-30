@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     
-    <link rel="stylesheet" href="<?= base_url(LANDINGPAGE_ASSETS_RELATIVE_PATH) . 'css/custom-bs.css'?>">
-    <link rel="stylesheet" href="<?= base_url(LANDINGPAGE_ASSETS_RELATIVE_PATH) . 'css/jquery.fancybox.min.css' ?>">
-    <link rel="stylesheet" href="<?= base_url(LANDINGPAGE_ASSETS_RELATIVE_PATH) . 'css/bootstrap-select.min.css' ?>">
-    <link rel="stylesheet" href="<?= base_url(LANDINGPAGE_ASSETS_RELATIVE_PATH) . 'fonts/icomoon/style.css' ?>">
-    <link rel="stylesheet" href="<?= base_url(LANDINGPAGE_ASSETS_RELATIVE_PATH) . 'fonts/line-icons/style.css' ?>">
-    <link rel="stylesheet" href="<?= base_url(LANDINGPAGE_ASSETS_RELATIVE_PATH) . 'css/owl.carousel.min.css' ?>">
-    <link rel="stylesheet" href="<?= base_url(LANDINGPAGE_ASSETS_RELATIVE_PATH) . 'css/animate.min.css' ?>">
-    <link rel="stylesheet" href="<?= base_url(LANDINGPAGE_ASSETS_RELATIVE_PATH) . 'css/quill.snow.css'?>">
+    <link rel="stylesheet" href="<?= base_url('assets/landing/' . 'css/custom-bs.css')?>">
+    <link rel="stylesheet" href="<?= base_url('assets/landing/' . 'css/jquery.fancybox.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/landing/' . 'css/bootstrap-select.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/landing/' . 'fonts/icomoon/style.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/landing/' . 'fonts/line-icons/style.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/landing/' . 'css/owl.carousel.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/landing/' . 'css/animate.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/landing/' . 'css/quill.snow.css')?>">
     
 
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="<?= base_url(LANDINGPAGE_ASSETS_RELATIVE_PATH) . 'css/style.css' ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/landing/' . 'css/style.css') ?>">
   </head>
   <body id="top">
 
@@ -47,37 +47,37 @@
       <div class="container-fluid">
         <div class="row align-items-center">
           <div class="site-logo col-6"> 
-          <img src="<?= base_url(LANDINGPAGE_ASSETS_RELATIVE_PATH) . 'images/azmi/abc.png'?>" alt="azmi">
+          <img src="<?= base_url('assets/landing/' . 'images/azmi/logo_white.svg')  ?>" alt="logo" style="width: 170px; height: 60px;">
           </div>
 
           <nav class="mx-auto site-navigation">
             <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
-              <li><a href="<?= base_url(LANDINGPAGE_ROOT_PATH) . 'index'?>">Home</a></li>
-              <li><a href="<?= base_url(LANDINGPAGE_ROOT_PATH) . 'about'?>">About</a></li>
-              <li><a href="<?= base_url(LANDINGPAGE_ROOT_PATH) . 'services'?>">Services</a></li>
+              <li><a href="<?= base_url('landingpage/' . 'index')?>">Home</a></li>
+              <li><a href="<?= base_url('landingpage/' . 'about')?>">About</a></li>
+              <li><a href="<?= base_url('landingpage/' . 'services')?>">Services</a></li>
               <li class="has-children">
                 <a href="#">Pages</a>
                 <ul class="dropdown">
-                  <li><a href="<?= base_url(LANDINGPAGE_ROOT_PATH) . 'gallery'?>">Gallery</a></li>
-                  <li><a href="<?= base_url(LANDINGPAGE_ROOT_PATH) . 'news'?>">News</a></li>
+                  <li><a href="<?= base_url('landingpage/' . 'gallery')?>">Gallery</a></li>
+                  <li><a href="<?= base_url('landingpage/' . 'news')?>">News</a></li>
                 </ul>
               </li>
               <li class="has-children">
                 <a href="#" class="nav-link active">Jobs</a>
                 <ul class="dropdown">
-                  <li><a href="<?= base_url(LANDINGPAGE_ROOT_PATH) . 'career'?>" class="nav-link active">Career</a></li>
-                  <li><a href="<?= base_url(LANDINGPAGE_ROOT_PATH) . 'login'?>">User Profile</a></li>
+                  <li><a href="<?= base_url('landingpage/' . 'career')?>" class="nav-link active">Career</a></li>
+                  <li><a href="<?= base_url('landingpage/' . 'login')?>">User Profile</a></li>
                 </ul>
               </li>
-              <li><a href="<?= base_url(LANDINGPAGE_ROOT_PATH) . 'contact'?>">Contact</a></li>
+              <li><a href="<?= base_url('landingpage/' . 'contact')?>">Contact</a></li>
 
-              <li class="d-lg-none"><a href="<?= base_url(LANDINGPAGE_ROOT_PATH) . 'login'?>">Log In</a></li>
+              <li class="d-lg-none"><a href="<?= base_url('landingpage/' . 'login')?>">Log In</a></li>
             </ul>
           </nav>
           
           <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
             <div class="ml-auto">
-            <a href="<?= base_url(LANDINGPAGE_ROOT_PATH) . 'login'?>" class="btn btn-warning border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Log In</a>
+            <a href="<?= base_url('landingpage/' . 'login')?>" class="btn btn-warning border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Log In</a>
             </div>
             <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
           </div>
@@ -87,7 +87,7 @@
     </header>
 
     <!-- HOME -->
-  <section class="section-hero home-section overlay inner-page bg-image" style="background-image: url('<?= base_url(LANDINGPAGE_ASSETS_RELATIVE_PATH) . 'images/azmi/person.jpeg'?>');" id="home-section">
+  <section class="section-hero home-section overlay inner-page bg-image" style="background-image: url('<?= base_url('assets/landing/' . 'images/azmi/person.jpeg')?>');" id="home-section">
 
       <div class="container">
         <div class="row align-items-center justify-content-center">
@@ -119,11 +119,11 @@
         <ul class="job-listings mb-5">
           <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
 
-            <a href="<?= base_url(LANDINGPAGE_ROOT_PATH) . 'login'?>"></a>
+            <a href="<?= base_url('landingpage/' . 'login')?>"></a>
 
 
             <div class="job-listing-logo">
-              <img src="<?= base_url(LANDINGPAGE_ASSETS_RELATIVE_PATH) . 'images/job_logo_1.jpg'?>" alt="Image" class="img-fluid">
+              <img src="<?= base_url('assets/landing/' . 'images/job_logo_1.jpg')?>" alt="Image" class="img-fluid">
             </div>
 
             <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
@@ -141,10 +141,10 @@
             
           </li>
           <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-            <a href="<?= base_url(LANDINGPAGE_ROOT_PATH) . 'login'?>"></a>
+            <a href="<?= base_url('landingpage/' . 'login')?>"></a>
             
             <div class="job-listing-logo">
-              <img src="<?= base_url(LANDINGPAGE_ASSETS_RELATIVE_PATH) . 'images/job_logo_2.jpg'?>" alt="Image" class="img-fluid">
+              <img src="<?= base_url('assets/landing/' . 'images/job_logo_2.jpg')?>" alt="Image" class="img-fluid">
             </div>
 
             <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
@@ -186,7 +186,7 @@
 
     <!-- ============================================================================================================================================ -->
 
-    <section class="py-5 bg-image overlay-primary fixed overlay" id="next" style="background-image: url('<?= base_url(LANDINGPAGE_ASSETS_RELATIVE_PATH) . 'images/azmi/hanggar2.jpeg'?>');">
+    <section class="py-5 bg-image overlay-primary fixed overlay" id="next" style="background-image: url('<?= base_url('assets/landing/' . 'images/azmi/hanggar2.jpeg')?>');">
       <div class="container">
         <div class="row align-items-center">
           <div class="container">
@@ -314,22 +314,22 @@
 
 
     <!-- SCRIPTS -->
-    <script src="<?= base_url(LANDINGPAGE_ASSETS_RELATIVE_PATH) . 'js/jquery.min.js'?>"></script>
-    <script src="<?= base_url(LANDINGPAGE_ASSETS_RELATIVE_PATH) . 'js/bootstrap.bundle.min.js'?>"></script>
-    <script src="<?= base_url(LANDINGPAGE_ASSETS_RELATIVE_PATH) . 'js/isotope.pkgd.min.js'?>"></script>
-    <script src="<?= base_url(LANDINGPAGE_ASSETS_RELATIVE_PATH) . 'js/stickyfill.min.js'?>"></script>
-    <script src="<?= base_url(LANDINGPAGE_ASSETS_RELATIVE_PATH) . 'js/jquery.fancybox.min.js'?>"></script>
-    <script src="<?= base_url(LANDINGPAGE_ASSETS_RELATIVE_PATH) . 'js/jquery.easing.1.3.js'?>"></script>
+    <script src="<?= base_url('assets/landing/' . 'js/jquery.min.js')?>"></script>
+    <script src="<?= base_url('assets/landing/' . 'js/bootstrap.bundle.min.js')?>"></script>
+    <script src="<?= base_url('assets/landing/' . 'js/isotope.pkgd.min.js')?>"></script>
+    <script src="<?= base_url('assets/landing/' . 'js/stickyfill.min.js')?>"></script>
+    <script src="<?= base_url('assets/landing/' . 'js/jquery.fancybox.min.js')?>"></script>
+    <script src="<?= base_url('assets/landing/' . 'js/jquery.easing.1.3.js')?>"></script>
     
-    <script src="<?= base_url(LANDINGPAGE_ASSETS_RELATIVE_PATH) . 'js/jquery.waypoints.min.js'?>"></script>
-    <script src="<?= base_url(LANDINGPAGE_ASSETS_RELATIVE_PATH) . 'js/jquery.animateNumber.min.js'?>"></script>
-    <script src="<?= base_url(LANDINGPAGE_ASSETS_RELATIVE_PATH) . 'js/owl.carousel.min.js'?>"></script>
-    <script src="<?= base_url(LANDINGPAGE_ASSETS_RELATIVE_PATH) . 'js/quill.min.js'?>"></script>
+    <script src="<?= base_url('assets/landing/' . 'js/jquery.waypoints.min.js')?>"></script>
+    <script src="<?= base_url('assets/landing/' . 'js/jquery.animateNumber.min.js')?>"></script>
+    <script src="<?= base_url('assets/landing/' . 'js/owl.carousel.min.js')?>"></script>
+    <script src="<?= base_url('assets/landing/' . 'js/quill.min.js')?>"></script>
     
     
-    <script src="<?= base_url(LANDINGPAGE_ASSETS_RELATIVE_PATH) . 'js/bootstrap-select.min.js'?>"></script>
+    <script src="<?= base_url('assets/landing/' . 'js/bootstrap-select.min.js')?>"></script>
     
-    <script src="<?= base_url(LANDINGPAGE_ASSETS_RELATIVE_PATH) . 'js/custom.js'?>"></script>
+    <script src="<?= base_url('assets/landing/' . 'js/custom.js')?>"></script>
 
      
   </body>

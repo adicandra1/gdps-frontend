@@ -34,7 +34,7 @@ Bagian step folder frontend:
 
       BaseURL:
         ✔ Sekarang ke file app\Config\App.php @done(20-11-25 20:29)
-        ✔ Rubah @line: public $baseURL = 'http://localhost:8080/'; @menjadi: public $baseURL = 'http://frontend.gdps.localhost:8080/'; @catatan: frontend.gdps.localhost adalah ServerName yang kita set saat membuat Virtual Host Apache @done(20-11-25 20:29)
+        ✔ Rubah @line: public $baseURL = 'http://localhost:8080/'; @menjadi: public $baseURL = 'http://frontend.gdps.localhost/'; @catatan: frontend.gdps.localhost adalah ServerName yang kita set saat membuat Virtual Host Apache @done(20-11-25 20:29)
         ✔ Rubah @line: public $indexPage = 'index.php'; @menjadi: public $indexPage = ''; @done(20-11-25 20:29)
         ✔ kalo udh, checklist (alt+D) bagian anak BaseURL @done(20-11-25 20:29)
         ✔ Ke source control sidebar kayak tadi @done(20-11-25 20:29)
@@ -45,10 +45,8 @@ Bagian step folder frontend:
   Step 1:
     Landing Page:
       View:
-        ✔ Copy view landing yang sudah dibuat ke folder app/Views @done(20-11-26 10:23)
-          @catatan: sebenarnya hampir sama kayak codeigniter 3, tp ini lebih rapi gitulah
-        ✔ Mungkin dikumpulin jadi satu folder view ladingnya @done(20-11-26 10:23)
-        ✔ Jadi kita buat folder di baru di app/Views , misal namanya: LandingPage, jadi nanti struktunya: app/Views/LandingPage/ @done(20-11-26 10:23)
+        ☐ Copy semua view landing yang ada di folder '../persiapan/snipplets/app/Views/LandingPage/'
+        ☐ Ke folder frontend/app/Views/LandingPage/
         ✔ Isikan semua view landing disitu. lihat @screenshot: '../persiapan/screenshot/LandingViewAdd.PNG' @done(20-11-26 10:23)
         ✔ kalo udh checklist bagian langkah View ini @screenshot: '../persiapan/screenshot/ChecklistStep1LandingView.PNG' @done(20-11-26 10:23)
         ✔ Stage change file yang anda tambahkan tadi bersama file TODO ini, @screenshot: '../persiapan/screenshot/StageChangeLandingViews.PNG' @done(20-11-26 10:23)
@@ -68,7 +66,48 @@ Bagian step folder frontend:
         ✔ Template isinya bisa dilihat di @file: '../persiapan/dokumen/codeSnipplets/Controller/LandingPage.php @done(20-11-27 00:57)
         ✔ Copy isi file tersebut ke file yang tadi dibuat @done(20-11-27 00:57)
         ✔ Jika sudah melihat penjelasan dan sudah copy isi file, maka: @done(20-11-27 00:57)
-        ✔ Checklist bagian ini @done(20-11-27 00:57)
-        ✔ stage change file yang berubah @done(20-11-27 00:57)
+        ✔ Checklist bagian langkah ini @done(20-11-27 00:57)
+        ✔ stage change file yang berubah (di folder frontend tentunya) @done(20-11-27 00:57)
         ✔ Kasih message, trs commit @done(20-11-27 00:57)
+
+      Buat Class Untuk Nampilin View:
+        @catatan: di penjelasan video sebelumnya, kita tau bahwa function view() bawaan codeIgniter 
+        itu agak kurang rapi kalau diterapin di project gede.
+        skrg kita akan buat Class kita sendiri untuk nampilin view
+        ✔ Buat folder di app/Libraries dengan nama View @done(20-11-30 21:48)
+        ✔ trs copykan semua file dari '../persiapan/snipplets/app/Libraries/View/ ke folder yang dibuat tadi @done(20-11-30 21:48)
+        ✔ Penjelasan ada file itu juga, jika belum paham isi dari file2 yang di copy tadi, gamasalah, @done(20-11-30 21:48)
+        ✔ Yang penting km paham poin2 pentingnya:, @done(20-11-30 21:48)
+        @poin2:
+          1. class TemplateEngine adalah pengganti function view bawaan CodeIgniter
+          2. Untuk memakai class TemplateEngine ini, file view harus di ubah menjadi class juga, bukan html aja.
+          3. setelah view dijadiin class, nanti harus extends BaseView
+
+        ✔ Skrg mari kita demostrasikan cara pemakaian nya. kita ambil contoh view index.php @done(20-11-30 21:48)
+        ✔ Pertama, kita buat class untuk nampung view index.php, namain apa aja terserah class nya, ditempatin di @done(20-11-30 21:48)
+        ✔ folder frontend/app/Views/LandingPage ya. misal nama classnya LandingPageHome @done(20-11-30 21:48)
+        ✔ skrg kita buat classnya @done(20-11-30 21:48)
+        ✔ video penjelasan class View + TemplateEngine @url: @done(20-11-30 21:48)
+        ✔ video penjelasan snippets pembuatan class View @url: @done(20-11-30 21:48)
+        ✔ Setelah menonton video sebelumnya, coba km praktek-an, ubah View lain menjadi class. ATAU, ikuti step "Memisahkan Footer dan Navbar" dulu dibawah, baru buat view class lain. @done(20-11-30 21:48)
+        ✔ Setelah semua tidak ada error, stage change file yang berubah di bagian folder frontend. @done(20-11-30 21:48)
+        ✔ Beri message commit yang sesuai, contohnya: Class View dan TemplateEngine. @done(20-11-30 21:48)
+        ✔ Commit dengan ctrl + Enter @done(20-11-30 21:48)
+
+      Memisahkan Footer dan Navbar dari View:
+        @catatan: kita tahu bahwa view landing page mempunyai footer dan navbar yang sama di tiap
+        page nya. maka kita coba pisahkan saja dari view utama nya.
+        ☐ buat folder baru di frontend/Views/LandingPage/ untuk menampung Navbar dan Footer, folder tersebut bisa dinamai apa aja, kalau ak sih seringnya tak namain "Partials", yang artinya "Bagian"
+        ☐ Kalau sudah buat folder, coba buat class View yang extends BaseView (@tips: bisa menggunakan snipplets) untuk menampung Navbar. namain class tsb: Navbar.php
+        ☐ pastekan html navbar yang sudah ak siapkan di folder '../persiapan/snipplets/app/Views/LandingPage/Partials/navbar.html' ke class Navbar tadi, lalu save.
+        ☐ Buat class View lain untuk Footer, di folder yang tadi (fronted/app/Views/LandingPage/Partials)
+        ☐ pastekan html footer yang sudah ak siapkan di folder '../persiapan/snipplets/app/Views/LandingPage/Partials/footer.html' ke class Footer tadi, lalu save.
+        ☐ buat abstract class untuk menampung Kerakngka View dari landingPage, yang berisi class Navbar, content, sama  class Footer . Namain class ini BaseLandingPage.php (buatnya di folder yang tadi, se folder sama Navbar dan Footer)
+          @catatan: jadi abstract class ini adalah class setengah jadi, ibaratnya cuma adonan, harus di proses/di extends lagi.
+          kayak cuma kerangka doang, baru isi Navbar dan Footer, untuk content page nya, nanti diisi di class yang extends class BaseLandingPage ini.
+        ☐ Untuk isi class BaseLandingPage ini, km bisa copy dari folder persiapan/snipplets/app/Views/LandingPage/Partials/BaseLandingPage.php (penjelasan ada disitu juga)
+        ☐ Setelah membuat class BaseLandingPage, skrg kita coba terapkan di salah satu View class landingpage. misalkan kita pakai class LandingPageHome yang dibuat di langkah "Buat Class Untuk Nampilin View".
+        ☐ Di class LandingPageHome.php , class tersebut masih meng-extends class BaseView , ganti dengan meng-extends BaseLandingPage, @screenshot: 
+
+
 

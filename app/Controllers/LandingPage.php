@@ -27,7 +27,8 @@
  */
 namespace App\Controllers; //oke, pertama, aku jelasin dari namespace ya. Ngomong2, ini masih class yang tadi ya, cuma ku tambahin penjelasan aja.
 
-
+use App\Libraries\View\TemplateEngine;
+use App\Views\LandingPage\LandingPageHome;
 
 /**
  * Sekarang ke definisi class
@@ -65,7 +66,8 @@ class LandingPage extends BaseController
      * jadinya = frontend.gdps.localhost/landingpage/index
      * Coba kita akses ya.
      * Nyalakan xampp dulu kalo belum aktif xampp nya, pake Run as Admin ya.
-     * masih error ternyata, errornya di view karena urlnya masih banyak yang belum dibetulin.
+     * Udh bisa ya, jadi seperti itu syntaxnya.
+     * Jadi akan auto routing ke fungsi2 yang di class ini,
      * 
      * 
      * tetapi fitur CodeIngiter yang auto men-route per function ini bisa jadi tidak rapi nanti,
@@ -93,8 +95,23 @@ class LandingPage extends BaseController
          * nanti apakah file ini ada atau tidak karena VSCode tidak bisa mengeceknya,
          * untuk membantu VSCode mengeceknya, nanti kita akan buat class tersendiri untuk menampilkan view,
          * di video lain ya.
+         * 
+         * Jadi sebenarnya bedanya apa sih class TemplateEngine ini dibanding function view bawaan Codeingniter?
+         * Sebenarnya sama saja, cuma kelebihan class TemplateEngine ini
+         * akan memunculkan error di VSCode ketika view yang dituju tidak ada, atau salah nama.
+         * coba ak demonstrasikan ya.
+         * kita hapus aja class view yang tadi untuk meliihat errornya
+         * langsung error kan.
+         * coba kita bandingkan dengan view bawaan codeigniter
          */
-        return view('LandingPage/index');
+        //return TemplateEngine::view(new LandingPageHome()); //panggil nama class view tadi
+        //skrg kita coba di browser
+        //berhasil ya.
+        return view('LandingPage/index'); //gaada error, tau tau di browser udh error aja nanti.
+        //begitulah bedanya,
+        //sebenarnya ada lagi keunggulan memakai class TemplateEngine ini, tapi nanti aja.
+
+        //Untuk memudahkan pembuatan view class, km bisa pake snipplets yang ak buat, ini cara gunain nya.
     }
 
     /**
