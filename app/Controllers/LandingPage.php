@@ -28,7 +28,13 @@
 namespace App\Controllers; //oke, pertama, aku jelasin dari namespace ya. Ngomong2, ini masih class yang tadi ya, cuma ku tambahin penjelasan aja.
 
 use App\Libraries\View\TemplateEngine;
+use App\Views\LandingPage\LandingPageAbout;
+use App\Views\LandingPage\LandingPageCareer;
+use App\Views\LandingPage\LandingPageContact;
+use App\Views\LandingPage\LandingPageGallery;
 use App\Views\LandingPage\LandingPageHome;
+use App\Views\LandingPage\LandingPageNews;
+use App\Views\LandingPage\LandingPageServices;
 
 /**
  * Sekarang ke definisi class
@@ -107,11 +113,12 @@ class LandingPage extends BaseController
         //return TemplateEngine::view(new LandingPageHome()); //panggil nama class view tadi
         //skrg kita coba di browser
         //berhasil ya.
-        return view('LandingPage/index'); //gaada error, tau tau di browser udh error aja nanti.
+        //return view('LandingPage/index'); //gaada error, tau tau di browser udh error aja nanti.
         //begitulah bedanya,
         //sebenarnya ada lagi keunggulan memakai class TemplateEngine ini, tapi nanti aja.
 
         //Untuk memudahkan pembuatan view class, km bisa pake snipplets yang ak buat, ini cara gunain nya.
+        return TemplateEngine::view(new LandingPageHome());
     }
 
     /**
@@ -119,19 +126,23 @@ class LandingPage extends BaseController
      * untuk fungsi-fungsi lain, kurang lebih sama, seperti fungsi index, hanya menampilkan view saja.
      */
     public function about() : string {
-        return view('LandingPage/about');
+        //return view('LandingPage/about');
+        return TemplateEngine::view(new LandingPageAbout());
     }
 
     public function career() : string {
-        return view('LandingPage/career');
+        //return view('LandingPage/career');
+        return TemplateEngine::view(new LandingPageCareer());
     }
 
     public function contact() : string {
-        return view('LandingPage/contact');
+        //return view('LandingPage/contact');
+        return TemplateEngine::view(new LandingPageContact());
     }
 
     public function gallery() : string {
-        return view('LandingPage/gallery');
+        //return view('LandingPage/gallery');
+        return TemplateEngine::view(new LandingPageGallery());
     }
 
     public function login() : string {
@@ -139,11 +150,13 @@ class LandingPage extends BaseController
     }
 
     public function news() : string {
-        return view('LandingPage/news');
+        //return view('LandingPage/news');
+        return TemplateEngine::view(new LandingPageNews());
     }
 
     public function services() : string {
-        return view('LandingPage/services');
+        //return view('LandingPage/services');
+        return TemplateEngine::view(new LandingPageServices());
     }
 
 }

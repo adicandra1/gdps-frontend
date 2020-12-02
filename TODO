@@ -45,8 +45,8 @@ Bagian step folder frontend:
   Step 1:
     Landing Page:
       View:
-        ☐ Copy semua view landing yang ada di folder '../persiapan/snipplets/app/Views/LandingPage/'
-        ☐ Ke folder frontend/app/Views/LandingPage/
+        ✔ Copy semua view landing yang ada di folder '../persiapan/snipplets/app/Views/LandingPage/' @done(20-12-02 11:15)
+        ✔ Ke folder frontend/app/Views/LandingPage/ @done(20-12-02 11:15)
         ✔ Isikan semua view landing disitu. lihat @screenshot: '../persiapan/screenshot/LandingViewAdd.PNG' @done(20-11-26 10:23)
         ✔ kalo udh checklist bagian langkah View ini @screenshot: '../persiapan/screenshot/ChecklistStep1LandingView.PNG' @done(20-11-26 10:23)
         ✔ Stage change file yang anda tambahkan tadi bersama file TODO ini, @screenshot: '../persiapan/screenshot/StageChangeLandingViews.PNG' @done(20-11-26 10:23)
@@ -97,17 +97,41 @@ Bagian step folder frontend:
       Memisahkan Footer dan Navbar dari View:
         @catatan: kita tahu bahwa view landing page mempunyai footer dan navbar yang sama di tiap
         page nya. maka kita coba pisahkan saja dari view utama nya.
-        ☐ buat folder baru di frontend/Views/LandingPage/ untuk menampung Navbar dan Footer, folder tersebut bisa dinamai apa aja, kalau ak sih seringnya tak namain "Partials", yang artinya "Bagian"
-        ☐ Kalau sudah buat folder, coba buat class View yang extends BaseView (@tips: bisa menggunakan snipplets) untuk menampung Navbar. namain class tsb: Navbar.php
-        ☐ pastekan html navbar yang sudah ak siapkan di folder '../persiapan/snipplets/app/Views/LandingPage/Partials/navbar.html' ke class Navbar tadi, lalu save.
-        ☐ Buat class View lain untuk Footer, di folder yang tadi (fronted/app/Views/LandingPage/Partials)
-        ☐ pastekan html footer yang sudah ak siapkan di folder '../persiapan/snipplets/app/Views/LandingPage/Partials/footer.html' ke class Footer tadi, lalu save.
-        ☐ buat abstract class untuk menampung Kerakngka View dari landingPage, yang berisi class Navbar, content, sama  class Footer . Namain class ini BaseLandingPage.php (buatnya di folder yang tadi, se folder sama Navbar dan Footer)
+        ✔ buat folder baru di frontend/Views/LandingPage/ untuk menampung Navbar dan Footer, folder tersebut bisa dinamai apa aja, kalau ak sih seringnya tak namain "Partials", yang artinya "Bagian" @done(20-12-02 11:19)
+        ✔ Kalau sudah buat folder, coba buat class View yang extends BaseView (@tips: bisa menggunakan snipplets) untuk menampung Navbar. namain class tsb: Navbar.php @done(20-12-02 11:19)
+        ✔ pastekan html navbar yang sudah ak siapkan di folder '../persiapan/snipplets/app/Views/LandingPage/Partials/navbar.html' ke class Navbar tadi, lalu save. @done(20-12-02 11:19)
+        ✔ Buat class View lain untuk Footer, di folder yang tadi (fronted/app/Views/LandingPage/Partials) @done(20-12-02 11:19)
+        ✔ pastekan html footer yang sudah ak siapkan di folder '../persiapan/snipplets/app/Views/LandingPage/Partials/footer.html' ke class Footer tadi, lalu save. @done(20-12-02 11:19)
+        ✔ buat abstract class untuk menampung Kerakngka View dari landingPage, yang berisi class Navbar, content, sama  class Footer . Namain class ini BaseLandingPage.php (buatnya di folder yang tadi, se folder sama Navbar dan Footer) @done(20-12-02 11:19)
           @catatan: jadi abstract class ini adalah class setengah jadi, ibaratnya cuma adonan, harus di proses/di extends lagi.
           kayak cuma kerangka doang, baru isi Navbar dan Footer, untuk content page nya, nanti diisi di class yang extends class BaseLandingPage ini.
-        ☐ Untuk isi class BaseLandingPage ini, km bisa copy dari folder persiapan/snipplets/app/Views/LandingPage/Partials/BaseLandingPage.php (penjelasan ada disitu juga)
-        ☐ Setelah membuat class BaseLandingPage, skrg kita coba terapkan di salah satu View class landingpage. misalkan kita pakai class LandingPageHome yang dibuat di langkah "Buat Class Untuk Nampilin View".
-        ☐ Di class LandingPageHome.php , class tersebut masih meng-extends class BaseView , ganti dengan meng-extends BaseLandingPage, @screenshot: 
+        ✔ Untuk isi class BaseLandingPage ini, km bisa copy dari folder persiapan/snipplets/app/Views/LandingPage/Partials/BaseLandingPage.php (penjelasan ada disitu juga) @done(20-12-02 11:19)
+        ✔ Setelah membuat class BaseLandingPage, skrg kita coba terapkan di salah satu View class landingpage. misalkan kita pakai class LandingPageHome yang dibuat di langkah "Buat Class Untuk Nampilin View". @done(20-12-02 11:19)
+        ✔ Di class LandingPageHome.php , class tersebut masih meng-extends class BaseView , ganti dengan meng-extends BaseLandingPage, @screenshot: '../persiapan/screenshot/ChangeExtendsToBaseLandingPage.PNG' @done(20-12-02 11:19)
+        ✔ Disitu class LandingPageHome.php masih error karena belum meng-implement / membuat function 'content'. @screenshot: '../persiapan/screenshot/BaseLandingPageExtendsErrorNotYetImplementMethod.PNG' @done(20-12-02 11:19)
+          @penjelasan: jadi, seperti yang telah disebutkan di class BaseLandingPage, class tersebut merupakan 'abstract class',
+          atau gampangnya class setengah jadi.
+          karena 'abstract class' , maka class yang meng-extendsnya (misal: class LandingPageHome) harus melengkapi function yang
+          belum jadi. disini contohnya mengimplementasikan function content.
+          jadi kita akan membuat fucntion content() di class LandingPageHome yang nanti berisi html content dari Page Home nya Landingpage.
+        ✔ Untuk mengatasi error tersebut, maka kita harus membuat function yang disarankan error tsb, yaitu fucntion content() @screenshot: '../persiapan/screenshot/FunctionContentContractBaseLandingPage.PNG' @done(20-12-02 11:19)
+        ✔ skrg ketikan: htParse  , di dalam function content() tadi dan tekan enter jika ada sugesti , ini akan menambahkan snipplets untuk memparsing html. @screenshot: '../persiapan/screenshot/htParseDiDalamFunctionContent.PNG' @done(20-12-02 11:19)
+        ✔ Nanti hasilnya akan seperti ini: @screenshot: '../persiapan/screenshot/htParseSnipplets.PNG' @done(20-12-02 11:19)
+        ✔ Kalau sudah begitu maka cut content dari function render() , hanya content saja tanpa navbar maupun footer, lihat @video: @done(20-12-02 11:19)
+        ✔ Disitu hanya content home saja tanpa navbar atau footer karena navbar dan footer sudah ada di BaseLandingPage, @done(20-12-02 11:19)
+        ✔ Serta function render LandingPageHome di delete karena sudah di wakilkan di class BaseLandingPage. @ingat: meng-extends class = mencopy function yang ada di class yg di-extends / Base class. @done(20-12-02 11:19)
+
+        ✔ Skrg baru coba buat view lain menjadi class dengan meng-extends BaseLandingPage. @done(20-12-02 11:20)
+        ✔ Jika sudah ubah view lain, di contoller LandingPage juga di ubah pake TemplateEngine. @screenshot: '../persiapan/screenshot/ControllerLandingPageTemplateEngine.PNG' @done(20-12-02 11:20)
+        ✔ Jika sudah berhasil dan tidak ada error, maka view yang bukan class bisa di delete (index.php, about.php, dll) @done(20-12-02 11:20)
+        ✔ kemudian, stage change file yang berubah di folder frontend, @done(20-12-02 11:20)
+        ✔ Kasih message yang sesuai, seperti: 'Menambahkan Navbar & Footer, serta membuat view class dari BaseLandingPage'. @done(20-12-02 11:20)
+        ✔ commit dengan ctrl + Enter. @done(20-12-02 11:20)
+        ✔ Oiya, class View yang sudah jadi bisa dilihat di folder '../persiapan/snipplets/app/Views/LandingPage' untuk referensi. @done(20-12-02 11:20)
+
+      Manual Routing:
+        
+
 
 
 
