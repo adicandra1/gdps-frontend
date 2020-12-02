@@ -3,6 +3,7 @@
 namespace App\Views\LandingPage;
 
 use App\Views\LandingPage\Partials\BaseLandingPage;
+use Config\RoutesConstant;
 
 class LandingPageNews extends BaseLandingPage
 {
@@ -11,7 +12,7 @@ class LandingPageNews extends BaseLandingPage
         $this->startHtmlParsing(); ?>
 
         <!-- HOME -->
-        <section class="section-hero overlay inner-page bg-image" style="background-image: url('<?= base_url('assets/landing/' . 'images/azmi/hanggar1.jpeg') ?>');" id="home-section">
+        <section class="section-hero overlay inner-page bg-image" style="background-image: url('<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/hanggar1.jpeg') ?>');" id="home-section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
@@ -29,32 +30,32 @@ class LandingPageNews extends BaseLandingPage
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <a href="<?= base_url('landingpage/' . 'blog-single') ?>"><img src="<?= base_url('assets/landing/' . 'images/sq_img_1.jpg') ?>" alt="Image" class="img-fluid rounded mb-4"></a>
+                        <a href="<?= base_url('landingpage/' . 'blog-single') ?>"><img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/sq_img_1.jpg') ?>" alt="Image" class="img-fluid rounded mb-4"></a>
                         <h3><a href="<?= base_url('landingpage/' . 'blog-single') ?>" class="text-black">7 Factors for Choosing Between Two Jobs</a></h3>
                         <div>April 15, 2019 <span class="mx-2">|</span> <a href="#">2 Comments</a></div>
                     </div>
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <a href="<?= base_url('landingpage/' . 'blog-single') ?>"><img src="<?= base_url('assets/landing/' . 'images/sq_img_2.jpg') ?>" alt="Image" class="img-fluid rounded mb-4"></a>
+                        <a href="<?= base_url('landingpage/' . 'blog-single') ?>"><img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/sq_img_2.jpg') ?>" alt="Image" class="img-fluid rounded mb-4"></a>
                         <h3><a href="blog-single.html" class="text-black">How to Write a Creative Cover Letter</a></h3>
                         <div>April 15, 2019 <span class="mx-2">|</span> <a href="#">2 Comments</a></div>
                     </div>
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <a href="blog-single.html"><img src="<?= base_url('assets/landing/' . 'images/sq_img_4.jpg') ?>" alt="Image" class="img-fluid rounded mb-4"></a>
+                        <a href="blog-single.html"><img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/sq_img_4.jpg') ?>" alt="Image" class="img-fluid rounded mb-4"></a>
                         <h3><a href="blog-single.html" class="text-black">The Right Way to Quit a Job You Started</a></h3>
                         <div>April 15, 2019 <span class="mx-2">|</span> <a href="#">2 Comments</a></div>
                     </div>
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <a href="blog-single.html"><img src="<?= base_url('assets/landing/' . 'images/sq_img_7.jpg') ?>" alt="Image" class="img-fluid rounded mb-4"></a>
+                        <a href="blog-single.html"><img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/sq_img_7.jpg') ?>" alt="Image" class="img-fluid rounded mb-4"></a>
                         <h3><a href="blog-single.html" class="text-black">7 Factors for Choosing Between Two Jobs</a></h3>
                         <div>April 15, 2019 <span class="mx-2">|</span> <a href="#">2 Comments</a></div>
                     </div>
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <a href="blog-single.html"><img src="<?= base_url('assets/landing/' . 'images/sq_img_5.jpg') ?>" alt="Image" class="img-fluid rounded mb-4"></a>
+                        <a href="blog-single.html"><img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/sq_img_5.jpg') ?>" alt="Image" class="img-fluid rounded mb-4"></a>
                         <h3><a href="blog-single.html" class="text-black">How to Write a Creative Cover Letter</a></h3>
                         <div>April 15, 2019 <span class="mx-2">|</span> <a href="#">2 Comments</a></div>
                     </div>
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <a href="blog-single.html"><img src="<?= base_url('assets/landing/' . 'images/sq_img_6.jpg') ?>" alt="Image" class="img-fluid rounded mb-4"></a>
+                        <a href="blog-single.html"><img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/sq_img_6.jpg') ?>" alt="Image" class="img-fluid rounded mb-4"></a>
                         <h3><a href="blog-single.html" class="text-black">The Right Way to Quit a Job You Started</a></h3>
                         <div>April 15, 2019 <span class="mx-2">|</span> <a href="#">2 Comments</a></div>
                     </div>

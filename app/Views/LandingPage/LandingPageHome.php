@@ -4,6 +4,7 @@ namespace App\Views\LandingPage;
 
 use App\Libraries\View\BaseView;
 use App\Views\LandingPage\Partials\BaseLandingPage;
+use Config\RoutesConstant;
 
 class LandingPageHome extends BaseLandingPage
 {
@@ -14,7 +15,7 @@ class LandingPageHome extends BaseLandingPage
 
         <!-- Masukkan HTML disini -->
         <!-- HOME -->
-        <section class="home-section section-hero fixed overlay bg-image" style="background-image: url('<?= base_url('assets/landing/' . 'images/azmi/gmf.jpg') ?>');" id="home-section">
+        <section class="home-section section-hero fixed overlay bg-image" style="background-image: url('<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/gmf.jpg') ?>');" id="home-section">
 
             <div class="container">
                 <div class="row align-items-center justify-content-center">
@@ -48,7 +49,7 @@ class LandingPageHome extends BaseLandingPage
 
         <!-- #003679; -->
 
-        <section class="py-5 bg-image overlay-primary fixed overlay" id="next" style="background-image: url('<?= base_url('assets/landing/' . 'images/azmi/hanggar2.jpeg') ?>');">
+        <section class="py-5 bg-image overlay-primary fixed overlay" id="next" style="background-image: url('<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/hanggar2.jpeg') ?>');">
             <div class="container">
                 <div class="row mb-6 justify-content-center">
                     <div class="col-md-12 text-center">
@@ -65,7 +66,7 @@ class LandingPageHome extends BaseLandingPage
                     <div class="col-lg-6 mb-5 mb-lg-0">
                         <a data-fancybox data-ratio="2" href="https://vimeo.com/317571768" class="block__96788">
                             <!-- <span class="play-icon"><span class="icon-play"></span></span> -->
-                            <img src="<?= base_url('assets/landing/' . 'images/sq_img_6.jpg') ?>" alt="Image" class="img-fluid img-shadow">
+                            <img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/sq_img_6.jpg') ?>" alt="Image" class="img-fluid img-shadow">
                         </a>
                     </div>
                     <div class="col-lg-5 ml-auto">
@@ -82,7 +83,7 @@ class LandingPageHome extends BaseLandingPage
                     <div class="col-lg-6 mb-5 mb-lg-0 order-md-2">
                         <a data-fancybox data-ratio="2" href="https://vimeo.com/317571768" class="block__96788">
                             <span class="play-icon"><span class="icon-play"></span></span>
-                            <img src="<?= base_url('assets/landing/' . 'images/sq_img_8.jpg') ?>" alt="Image" class="img-fluid img-shadow">
+                            <img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/sq_img_8.jpg') ?>" alt="Image" class="img-fluid img-shadow">
                         </a>
                     </div>
                     <div class="col-lg-5 mr-auto order-md-1  mb-5 mb-lg-0">

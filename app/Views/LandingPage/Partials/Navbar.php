@@ -3,6 +3,7 @@
 namespace App\Views\LandingPage\Partials;
 
 use App\Libraries\View\BaseView;
+use Config\RoutesConstant;
 
 class Navbar extends BaseView
 {
@@ -26,38 +27,38 @@ class Navbar extends BaseView
                 <div class="container-fluid">
                     <div class="row align-items-center">
                         <div class="site-logo col-6">
-                            <img src="<?= base_url('assets/landing/' . 'images/azmi/logo_white.svg')  ?>" alt="logo" style="width: 170px; height: 60px;">
+                            <img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/logo_white.svg')  ?>" alt="logo" style="width: 170px; height: 60px;">
                         </div>
 
                         <nav class="mx-auto site-navigation">
                             <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
-                                <li><a href="<?= base_url('landingpage/' . 'index') ?>">Home</a></li>
-                                <li><a href="<?= base_url('landingpage/' . 'about') ?>">About</a></li>
-                                <li><a href="<?= base_url('landingpage/' . 'services') ?>">Services</a></li>
+                                <li><a href="<?= route_to(RoutesConstant::LANDINGPAGE_HOME) ?>">Home</a></li>
+                                <li><a href="<?= route_to(RoutesConstant::LANDINGPAGE_ABOUT) ?>">About</a></li>
+                                <li><a href="<?= route_to(RoutesConstant::LANDINGPAGE_SERVICES) ?>">Services</a></li>
                                 <li class="has-children">
                                     <a>Pages</a>
                                     <ul class="dropdown">
-                                        <li><a href="<?= base_url('landingpage/' . 'gallery') ?>">Gallery</a></li>
-                                        <li><a href="<?= base_url('landingpage/' . 'news') ?>">News</a></li>
+                                        <li><a href="<?= route_to(RoutesConstant::LANDINGPAGE_GALLERY) ?>">Gallery</a></li>
+                                        <li><a href="<?= route_to(RoutesConstant::LANDINGPAGE_NEWS) ?>">News</a></li>
                                     </ul>
                                 </li>
                                 <li class="has-children">
                                     <a>Jobs</a>
                                     <ul class="dropdown">
-                                        <li><a href="<?= base_url('landingpage/' . 'career') ?>">Career</a></li>
-                                        <li><a href="<?= base_url('landingpage/' . 'login') ?>">User Profile</a></li>
+                                        <li><a href="<?= route_to(RoutesConstant::LANDINGPAGE_CAREER) ?>">Career</a></li>
+                                        <li><a href="#">User Profile</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="<?= base_url('landingpage/' . 'contact') ?>">Contact</a></li>
+                                <li><a href="<?= route_to(RoutesConstant::LANDINGPAGE_CONTACT) ?>">Contact</a></li>
 
 
-                                <li class="d-lg-none"><a href="<?= base_url('landingpage/' . 'login') ?>">Log In</a></li>
+                                <li class="d-lg-none"><a href="#">Log In</a></li>
                             </ul>
                         </nav>
 
                         <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
                             <div class="ml-auto">
-                                <a href="<?= base_url('landingpage/' . 'login') ?>" class="btn btn-warning border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Log In</a>
+                                <a href="#" class="btn btn-warning border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Log In</a>
                             </div>
                             <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
                         </div>

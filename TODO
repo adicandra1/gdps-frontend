@@ -130,8 +130,52 @@ Bagian step folder frontend:
         ✔ Oiya, class View yang sudah jadi bisa dilihat di folder '../persiapan/snipplets/app/Views/LandingPage' untuk referensi. @done(20-12-02 11:20)
 
       Manual Routing:
-        
+        @catatan: Seperti yang kukatakan di awal-awal tutorial, jika kita bergantung pada fitur autorouting
+        milik Codeigniter, kita tidak bisa merapikan/kurang bebas dalam menentukan url apa yang menuju Controller function apa.
+        Nah di step ini, kita akan mengubah routing function index() (milik controller LandingPage.php) agar bisa
+        diakses pada url: frontend.gdps.localhost/  (yang tadinya hanya bisa diakses di url: frontend.gdps.localhost/landingpage/index)
+        ✔ Pertama, buka file frontend/app/Config/Routes.php @done(20-12-02 22:15)
+        ✔ lalu cari line yang berisi: $routes->setAutoRoute(true); @done(20-12-02 22:15)
+        ✔ ubah jadi false: $routes->setAutoRoute(false); lihat @screenshot: '../persiapan/screenshot/SetAutoRouteFalse.jpg' @done(20-12-02 22:15)
+        ✔ lalu copy code di file '../persiapan/snipplets/app/Config/Routes.php' @done(20-12-02 22:15)
+        ✔ pastekan ke file '../frontend/app/Config/Routes.php' di bagian bawah line: $routes->get('/', 'Home::index'); @done(20-12-02 22:15)
+        ✔ Lalu comment line: $routes->get('/', 'Home::index'); lihat @screenshot: '../persiapan/screenshot/CommentRoutesGetHome.jpg'; @done(20-12-02 22:15)
+        ✔ Setelah itu, di bagian yg dicopy td, cari kata 'RouteCollection', dan tekan ctrl+spasi, nanti akan ada sugestion, pilih yang RouteCollection. lihat @screenshot: '../persiapan/screenshot/SuggestionRouteCollection.jpg' @done(20-12-02 22:15)
+        ✔ Setelah itu buat file RoutesConstant.php di folder frontend/app/Config/ @done(20-12-02 22:15)
+        ✔ Isi file tersebut bisa di copy di file '../persiapan/snipplets/app/Config/RoutesConstant.php' @done(20-12-02 22:15)
+        ✔ Setelah di pastekan, kita kembali ke file frontend/app/Config/Routes.php @done(20-12-02 22:15)
+        ✔ di bagian routing yang tadi, kita buat alias untuk tiap2 route, alias routing ditempatkan di argumen ke-3 function get() syntaxnya: ['as' => {aliasdisini} ]. lihat @screenshot: '../persiapan/screenshot/RoutesAlias.jpg' @done(20-12-02 22:15)
+        ✔ atau kalo bingung bisa copy dari file '../persiapan/snipplets/app/Config/RoutesWithAlias @done(20-12-02 22:15)
+        ✔ setelah mensetting alias, tinggal kita panggil routingnya di view class: @done(20-12-02 22:15)
+        ✔ Buka file '../frontend/app/Views/LandingPage/Partials/Navbar.php', lalu cari href yang masih menunju ke url: landingpage/{blablabla} . @done(20-12-02 22:15)
+        ✔ caranya kita pake fitur find (ctrl +F), dan ketikan: 'landingpage/' . lihat @screenshot: '../persiapan/screenshot/SearchLandingPageHref.jpg' @done(20-12-02 22:15)
+        ✔ lalu ubah href tsb untuk menggunakan alias yg tadi telah dibuat, dan ga pake base_url() lagi, tp pake route_to() . lihat @screenshot: '../persiapan/screenshot/ChangeToRoutesAlias.jpg' @done(20-12-02 22:15)
+          @catatan: fungsi route_to() ini nanti akan membuat url sesuai route yang sudah didefinisikan di Routes.php melalui alias (contoh alias: RoutesConstant::LANDINGPAGE_HOME)
+          @ingat: fungsi route_to() ini hanya untuk digunakan oleh href yang menunju page lain, 
+          untuk url yg menuju assets(misal: gambar, js, dan css) masih menggunakan base_url()
+        ✔ Skrg kita ubah url yang untuk assets agar menggunakan url dari class RoutesConstant juga, tujuannya untuk memudahkan edit url jika url berubah (maksudnya ubahnya di satu tempat aja) @done(20-12-02 22:15)
+          @catatan: 
+          url asset yang dimaksud adalah ini, @screenshot: '../persiapan/screenshot/ContohURLAssets.jpg' , 
+          bagian 'assets/landing/' akan diubah untuk mengakses variable RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH @screenshot: '../persiapan/screenshot/ContohGantiDenganRoutesConstant.jpg'
+          variable RoutesConstant sebenarnya juga berisi 'assets/landing/' , lalu kenapa di ganti kalau intinya sama saja??
+          ini berguna jika url/letak folder assets/landing nya berubah, maka kita hanya edit di satu tempat aja, yaitu di variable LANDINGPAGE_ASSETS_RELATIVE_PATH tadi.
+        ✔ Baik, untuk cara mengganti url assets/landing/ tadi, kita pakai fitur sidebar search milik VSCode (ctrl+shift+F) karena url ini berada di beberapa file. @done(20-12-02 22:15)
+        ✔ Setelah sidebar search terbuka, tekan button '>', dan isikan value-value dibawah: @done(20-12-02 22:15)
+          @value:
+            search: 'assets/landing/'  (pake tanda petiknya ya)
+            replace: RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH
+            files to include: ./frontend
+            files to exclude: TODO, RoutesConstant.php
+          untuk lebih jelasnya, lihat @screenshot: '../persiapan/screenshot/SearchAndReplaceURLAssetsLanding.jpg'
+          @note: kalau udh isi sesuai screenshot diatas, maka tekan button yang ak kasih panah, itu akan mereplace semua string 'assets/landing/' menjadi RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH
+        ✔ Setelah ikuti langkah diatas, skrg check view class (misal: LandingPageHome.php, LandingPageAbout.php, dll) dan clas BaseLandingPage.php @done(20-12-02 22:14)
+        ✔ Pasti akan ada error di bagian RoutesConstant, tekan ctrl+spasi di akhir kata RoutesConstant, maka akan muncul sugestion, pilih dan tekan enter, maka error akan hilang, @screenshot: '../persiapan/screenshot/RoutesConstantFixInViewClass.jpg' @done(20-12-02 22:14)
+        ✔ lakukan ke semua view class landingpage @done(20-12-02 22:14)
+        ✔ Setelah itu, skrg test akses di browser, apakah ada error atau tidak, nyalakan xampp(Run as administrator) dan buka frontend.gdps.localhost @done(20-12-02 22:14)
+        ✔ Jika tidak ada error, maka stage chage file yang di bagian frontend. @done(20-12-02 22:14)
+        ✔ Kasih message yang sesuai, misal: Ubah ke Manual Routing @done(20-12-02 22:14)
+        ✔ commit dengan ctrl+Enter @done(20-12-02 22:14)
 
+          
 
-
-
+          

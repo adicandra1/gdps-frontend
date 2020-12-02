@@ -2,6 +2,7 @@
 
 use App\Libraries\View\BaseView;
 use App\Libraries\View\TemplateEngine;
+use Config\RoutesConstant;
 
 /**
  * Seperti yang sudah dijelaskan, abstract class adalah class setengah jadi,
@@ -41,16 +42,16 @@ abstract class BaseLandingPage extends BaseView
                 <meta name="author" content="Free-Template.co" />
                 <link rel="shortcut icon" href="ftco-32x32.png">
 
-                <link rel="stylesheet" href="<?= base_url('assets/landing/' . 'css/custom-bs.css') ?>">
-                <link rel="stylesheet" href="<?= base_url('assets/landing/' . 'css/jquery.fancybox.min.css') ?>">
-                <link rel="stylesheet" href="<?= base_url('assets/landing/' . 'css/bootstrap-select.min.css') ?>">
-                <link rel="stylesheet" href="<?= base_url('assets/landing/' . 'fonts/icomoon/style.css') ?>">
-                <link rel="stylesheet" href="<?= base_url('assets/landing/' . 'fonts/line-icons/style.css') ?>">
-                <link rel="stylesheet" href="<?= base_url('assets/landing/' . 'css/owl.carousel.min.css') ?>">
-                <link rel="stylesheet" href="<?= base_url('assets/landing/' . 'css/animate.min.css') ?>">
+                <link rel="stylesheet" href="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'css/custom-bs.css') ?>">
+                <link rel="stylesheet" href="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'css/jquery.fancybox.min.css') ?>">
+                <link rel="stylesheet" href="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'css/bootstrap-select.min.css') ?>">
+                <link rel="stylesheet" href="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'fonts/icomoon/style.css') ?>">
+                <link rel="stylesheet" href="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'fonts/line-icons/style.css') ?>">
+                <link rel="stylesheet" href="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'css/owl.carousel.min.css') ?>">
+                <link rel="stylesheet" href="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'css/animate.min.css') ?>">
 
                 <!-- MAIN CSS -->
-                <link rel="stylesheet" href="<?= base_url('assets/landing/' . 'css/style.css') ?>">
+                <link rel="stylesheet" href="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'css/style.css') ?>">
             </head>
 
             <body id="top">
@@ -74,20 +75,20 @@ abstract class BaseLandingPage extends BaseView
                 </div>
 
                 <!-- SCRIPTS -->
-                <script src="<?= base_url('assets/landing/' . 'js/jquery.min.js') ?>"></script>
-                <script src="<?= base_url('assets/landing/' . 'js/bootstrap.bundle.min.js') ?>"></script>
-                <script src="<?= base_url('assets/landing/' . 'js/isotope.pkgd.min.js') ?>"></script>
-                <script src="<?= base_url('assets/landing/' . 'js/stickyfill.min.js') ?>"></script>
-                <script src="<?= base_url('assets/landing/' . 'js/jquery.fancybox.min.js') ?>"></script>
-                <script src="<?= base_url('assets/landing/' . 'js/jquery.easing.1.3.js') ?>"></script>
+                <script src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'js/jquery.min.js') ?>"></script>
+                <script src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'js/bootstrap.bundle.min.js') ?>"></script>
+                <script src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'js/isotope.pkgd.min.js') ?>"></script>
+                <script src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'js/stickyfill.min.js') ?>"></script>
+                <script src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'js/jquery.fancybox.min.js') ?>"></script>
+                <script src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'js/jquery.easing.1.3.js') ?>"></script>
 
-                <script src="<?= base_url('assets/landing/' . 'js/jquery.waypoints.min.js') ?>"></script>
-                <script src="<?= base_url('assets/landing/' . 'js/jquery.animateNumber.min.js') ?>"></script>
-                <script src="<?= base_url('assets/landing/' . 'js/owl.carousel.min.js') ?>"></script>
+                <script src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'js/jquery.waypoints.min.js') ?>"></script>
+                <script src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'js/jquery.animateNumber.min.js') ?>"></script>
+                <script src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'js/owl.carousel.min.js') ?>"></script>
 
-                <script src="<?= base_url('assets/landing/' . 'js/bootstrap-select.min.js') ?>"></script>
+                <script src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'js/bootstrap-select.min.js') ?>"></script>
 
-                <script src="<?= base_url('assets/landing/' . 'js/custom.js') ?>"></script>
+                <script src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'js/custom.js') ?>"></script>
 
 
             </body>

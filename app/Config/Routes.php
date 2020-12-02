@@ -1,5 +1,7 @@
 <?php namespace Config;
 
+use CodeIgniter\Router\RouteCollection;
+
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
@@ -20,7 +22,7 @@ $routes->setDefaultController('Home');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
-$routes->setAutoRoute(true);
+$routes->setAutoRoute(false);
 
 /**
  * --------------------------------------------------------------------
@@ -30,7 +32,31 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+//$routes->get('/', 'Home::index');
+
+//jadi routes group ini maksudnya km bisa group route yang sejenis (misalkan: group landingPage ini),
+//routes group ini base nya di url '/' yaitu: frontend.gdps.localhost/
+$routes->group('/', function (RouteCollection $routes) {
+
+	//ini route untuk function controller LandingPage home/index , url nya frontend.gdps.localhost/ 
+    $routes->get('', 'LandingPage::index', ['as' => RoutesConstant::LANDINGPAGE_HOME]);
+
+	//ini route untuk function controller LandingPage about , url nya frontend.gdps.localhost/about
+    $routes->get('about', 'LandingPage::about', ['as' => RoutesConstant::LANDINGPAGE_ABOUT]);
+
+	//ini route untuk function controller LandingPage services , url nya frontend.gdps.localhost/services
+    $routes->get('services', 'LandingPage::services', ['as' => RoutesConstant::LANDINGPAGE_SERVICES]);
+
+	//ini route untuk function controller LandingPage about , url nya frontend.gdps.localhost/gallery
+    $routes->get('gallery', 'LandingPage::gallery', ['as' => RoutesConstant::LANDINGPAGE_GALLERY]);
+
+	//dst dst
+    $routes->get('news', 'LandingPage::news', ['as' => RoutesConstant::LANDINGPAGE_NEWS]);
+
+    $routes->get('career', 'LandingPage::career', ['as' => RoutesConstant::LANDINGPAGE_CAREER]);
+
+    $routes->get('contact', 'LandingPage::contact', ['as' => RoutesConstant::LANDINGPAGE_CONTACT]);
+});
 
 /**
  * --------------------------------------------------------------------
