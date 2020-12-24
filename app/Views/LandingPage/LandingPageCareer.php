@@ -3,7 +3,7 @@
 namespace App\Views\LandingPage;
 
 use App\Views\LandingPage\Partials\BaseLandingPage;
-use Config\RoutesConstant;
+use App\Views\ViewRoutesContract;
 
 class LandingPageCareer extends BaseLandingPage
 {
@@ -126,7 +126,7 @@ class LandingPageCareer extends BaseLandingPage
         </style>
 
         <!-- HOME -->
-        <section class="section-hero home-section overlay inner-page bg-image" style="background-image: url('<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/person.jpeg') ?>');" id="home-section">
+        <section class="section-hero home-section overlay inner-page bg-image" style="background-image: url('<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/person.jpeg') ?>');" id="home-section">
 
             <div class="container">
                 <div class="row align-items-center justify-content-center">
@@ -190,7 +190,7 @@ class LandingPageCareer extends BaseLandingPage
 
 
                         <div class="job-listing-logo">
-                            <img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/job_logo_1.jpg') ?>" alt="Image" class="img-fluid">
+                            <img src="<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/job_logo_1.jpg') ?>" alt="Image" class="img-fluid">
                         </div>
 
                         <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
@@ -211,7 +211,7 @@ class LandingPageCareer extends BaseLandingPage
                         <a href="#" onclick="document.getElementById('modal-wrapper').style.display='block'"></a>
 
                         <div class="job-listing-logo">
-                            <img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/job_logo_1.jpg') ?>" alt="Image" class="img-fluid">
+                            <img src="<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/job_logo_1.jpg') ?>" alt="Image" class="img-fluid">
                         </div>
 
                         <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
@@ -274,7 +274,7 @@ class LandingPageCareer extends BaseLandingPage
 
         <!-- ============================================================================================================================================ -->
 
-            <section class="py-5 bg-image overlay-primary fixed overlay" id="next" style="background-image: url('<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/hanggar2.jpeg')?>');">
+            <section class="py-5 bg-image overlay-primary fixed overlay" id="next" style="background-image: url('<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/hanggar2.jpeg')?>');">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-8">

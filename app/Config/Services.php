@@ -1,5 +1,7 @@
 <?php namespace Config;
 
+use AutoMapperPlus\AutoMapper;
+use AutoMapperPlus\Configuration\AutoMapperConfig;
 use CodeIgniter\Config\Services as CoreServices;
 
 /**
@@ -27,4 +29,12 @@ class Services extends CoreServices
 	//
 	//        return new \CodeIgniter\Example();
 	//    }
+
+	public static function autoMapper(bool $getShared = true) : AutoMapper {
+		if($getShared) {
+			return static::getSharedInstance('autoMapper');
+		}
+
+		return new AutoMapper(ConfigAutoMapper::config());
+	}
 }

@@ -3,7 +3,7 @@
 namespace App\Views\LandingPage\Partials;
 
 use App\Libraries\View\BaseView;
-use Config\RoutesConstant;
+use App\Views\ViewRoutesContract;
 
 class Navbar extends BaseView
 {
@@ -27,38 +27,38 @@ class Navbar extends BaseView
                 <div class="container-fluid">
                     <div class="row align-items-center">
                         <div class="site-logo col-6">
-                            <img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/logo_white.svg')  ?>" alt="logo" style="width: 170px; height: 60px;">
+                            <img src="<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/logo_white.svg')  ?>" alt="logo" style="width: 170px; height: 60px;">
                         </div>
 
                         <nav class="mx-auto site-navigation">
                             <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
-                                <li><a href="<?= route_to(RoutesConstant::LANDINGPAGE_HOME) ?>">Home</a></li>
-                                <li><a href="<?= route_to(RoutesConstant::LANDINGPAGE_ABOUT) ?>">About</a></li>
-                                <li><a href="<?= route_to(RoutesConstant::LANDINGPAGE_SERVICES) ?>">Services</a></li>
+                                <li><a href="<?= route_to(ViewRoutesContract::LANDINGPAGE_HOME) ?>">Home</a></li>
+                                <li><a href="<?= route_to(ViewRoutesContract::LANDINGPAGE_ABOUT) ?>">About</a></li>
+                                <li><a href="<?= route_to(ViewRoutesContract::LANDINGPAGE_SERVICES) ?>">Services</a></li>
                                 <li class="has-children">
                                     <a>Pages</a>
                                     <ul class="dropdown">
-                                        <li><a href="<?= route_to(RoutesConstant::LANDINGPAGE_GALLERY) ?>">Gallery</a></li>
-                                        <li><a href="<?= route_to(RoutesConstant::LANDINGPAGE_NEWS) ?>">News</a></li>
+                                        <li><a href="<?= route_to(ViewRoutesContract::LANDINGPAGE_GALLERY) ?>">Gallery</a></li>
+                                        <li><a href="<?= route_to(ViewRoutesContract::LANDINGPAGE_NEWS) ?>">News</a></li>
                                     </ul>
                                 </li>
                                 <li class="has-children">
                                     <a>Jobs</a>
                                     <ul class="dropdown">
-                                        <li><a href="<?= route_to(RoutesConstant::LANDINGPAGE_CAREER) ?>">Career</a></li>
-                                        <li><a href="#">User Profile</a></li>
+                                        <li><a href="<?= route_to(ViewRoutesContract::LANDINGPAGE_CAREER) ?>">Career</a></li>
+                                        <li><a href="<?= route_to(ViewRoutesContract::PORTAL_PROFILE) ?>">User Profile</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="<?= route_to(RoutesConstant::LANDINGPAGE_CONTACT) ?>">Contact</a></li>
+                                <li><a href="<?= route_to(ViewRoutesContract::LANDINGPAGE_CONTACT) ?>">Contact</a></li>
 
 
-                                <li class="d-lg-none"><a href="#">Log In</a></li>
+                                <li class="d-lg-none"><a href="<?= route_to(ViewRoutesContract::LOGIN) ?>">Log In</a></li>
                             </ul>
                         </nav>
 
                         <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
                             <div class="ml-auto">
-                                <a href="#" class="btn btn-warning border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Log In</a>
+                                <a href="<?= route_to(ViewRoutesContract::LOGIN) ?>" class="btn btn-warning border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Log In</a>
                             </div>
                             <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
                         </div>

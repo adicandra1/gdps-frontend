@@ -3,7 +3,7 @@
 namespace App\Views\LandingPage;
 
 use App\Views\LandingPage\Partials\BaseLandingPage;
-use Config\RoutesConstant;
+use App\Views\ViewRoutesContract;
 
 class LandingPageAbout extends BaseLandingPage
 {
@@ -12,7 +12,7 @@ class LandingPageAbout extends BaseLandingPage
         $this->startHtmlParsing(); ?>
 
         <!-- HOME -->
-        <section class="section-hero overlay inner-page bg-image" style="background-image: url('<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/hanggar1.jpeg') ?>');" id="home-section">
+        <section class="section-hero overlay inner-page bg-image" style="background-image: url('<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/hanggar1.jpeg') ?>');" id="home-section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
@@ -26,7 +26,7 @@ class LandingPageAbout extends BaseLandingPage
             </div>
         </section>
 
-        <section class="py-5 bg-image overlay-primary fixed overlay" id="next" style="background-image: url('<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/hanggar2.jpeg') ?>');">
+        <section class="py-5 bg-image overlay-primary fixed overlay" id="next" style="background-image: url('<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/hanggar2.jpeg') ?>');">
             <div class="container">
                 <div class="row mb-6 justify-content-center">
                     <div class="col-md-12 text-center">
@@ -54,14 +54,14 @@ class LandingPageAbout extends BaseLandingPage
                             </blockquote>
                         </div>
                         <div class="col-lg-5 align-self-end text-center text-lg-right">
-                            <img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/budi.png') ?>" alt="Image" class="img-fluid mb-0">
+                            <img src="<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/budi.png') ?>" alt="Image" class="img-fluid mb-0">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-5 bg-image overlay-primary fixed overlay" id="next" style="background-image: url('<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/hero_1.jpg') ?>');">
+        <section class="py-5 bg-image overlay-primary fixed overlay" id="next" style="background-image: url('<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/hero_1.jpg') ?>');">
             <div class="container">
                 <div class="row mb-6 justify-content-center">
                     <div class="col-md-12 text-center">
@@ -104,7 +104,7 @@ class LandingPageAbout extends BaseLandingPage
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-5 mb-lg-0">
-                        <img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/profesional.jpg') ?>" alt="Image" class="img-fluid img-shadow">
+                        <img src="<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/profesional.jpg') ?>" alt="Image" class="img-fluid img-shadow">
                         </a>
                     </div>
                     <div class="col-lg-5 ml-auto">
@@ -116,7 +116,7 @@ class LandingPageAbout extends BaseLandingPage
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-5 mb-lg-0 order-md-2">
-                        <img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/real.jpg') ?>" alt="Image" class="img-fluid img-shadow">
+                        <img src="<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/real.jpg') ?>" alt="Image" class="img-fluid img-shadow">
                         </a>
                     </div>
                     <div class="col-lg-5 mr-auto order-md-1  mb-5 mb-lg-0">
@@ -134,7 +134,7 @@ class LandingPageAbout extends BaseLandingPage
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-5 mb-lg-0">
-                        <img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/integrity.jpg') ?>" alt="Image" class="img-fluid img-shadow">
+                        <img src="<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/integrity.jpg') ?>" alt="Image" class="img-fluid img-shadow">
                         </a>
                     </div>
                     <div class="col-lg-5 ml-auto">
@@ -149,7 +149,7 @@ class LandingPageAbout extends BaseLandingPage
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-5 mb-lg-0 order-md-2">
-                        <img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/maximize.jpg') ?>" alt="Image" class="img-fluid img-shadow">
+                        <img src="<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/maximize.jpg') ?>" alt="Image" class="img-fluid img-shadow">
                         </a>
                     </div>
                     <div class="col-lg-5 mr-auto order-md-1  mb-5 mb-lg-0">
@@ -162,7 +162,7 @@ class LandingPageAbout extends BaseLandingPage
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-5 mb-lg-0">
-                        <img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/energik.jpg') ?>" alt="Image" class="img-fluid img-shadow">
+                        <img src="<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/energik.jpg') ?>" alt="Image" class="img-fluid img-shadow">
                         </a>
                     </div>
                     <div class="col-lg-5 ml-auto">

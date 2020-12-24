@@ -23,4 +23,9 @@ class RoutesConstant {
      * ini untuk folder assets/landing di frontend/public
      */
     const LANDINGPAGE_ASSETS_RELATIVE_PATH = 'assets/landing/';
+
+    /**
+     * ini untuk folder assets/portal di frontend/public
+     */
+    const PORTAL_ASSETS_RELATIVE_PATH = 'assets/portal/';
 }

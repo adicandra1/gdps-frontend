@@ -3,7 +3,7 @@
 namespace App\Views\LandingPage;
 
 use App\Views\LandingPage\Partials\BaseLandingPage;
-use Config\RoutesConstant;
+use App\Views\ViewRoutesContract;
 
 class LandingPageContact extends BaseLandingPage
 {
@@ -12,7 +12,7 @@ class LandingPageContact extends BaseLandingPage
         $this->startHtmlParsing(); ?>
 
         <!-- HOME -->
-        <section class="section-hero overlay inner-page bg-image" style="background-image: url('<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/hanggar1.jpeg') ?>');" id="home-section">
+        <section class="section-hero overlay inner-page bg-image" style="background-image: url('<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/hanggar1.jpeg') ?>');" id="home-section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
@@ -106,7 +106,7 @@ class LandingPageContact extends BaseLandingPage
                                 <p>&ldquo;Ipsum harum assumenda in eum vel eveniet numquam cumque vero vitae enim cupiditate deserunt eligendi officia modi consectetur. Expedita tempora quos nobis earum hic ex asperiores quisquam optio nostrum sit&rdquo;</p>
                             </blockquote>
                             <div class="block__91147 d-flex align-items-center">
-                                <figure class="mr-4"><img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/person_1.jpg') ?>" alt="Image" class="img-fluid"></figure>
+                                <figure class="mr-4"><img src="<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/person_1.jpg') ?>" alt="Image" class="img-fluid"></figure>
                                 <div>
                                     <h3>Elisabeth Smith</h3>
                                     <span class="position">Creative Director</span>
@@ -121,7 +121,7 @@ class LandingPageContact extends BaseLandingPage
                                 <p>&ldquo;Ipsum harum assumenda in eum vel eveniet numquam, cumque vero vitae enim cupiditate deserunt eligendi officia modi consectetur. Expedita tempora quos nobis earum hic ex asperiores quisquam optio nostrum sit&rdquo;</p>
                             </blockquote>
                             <div class="block__91147 d-flex align-items-center">
-                                <figure class="mr-4"><img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/person_2.jpg') ?>" alt="Image" class="img-fluid"></figure>
+                                <figure class="mr-4"><img src="<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/person_2.jpg') ?>" alt="Image" class="img-fluid"></figure>
                                 <div>
                                     <h3>Chris Peter</h3>
                                     <span class="position">Web Designer</span>

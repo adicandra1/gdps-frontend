@@ -3,7 +3,7 @@
 namespace App\Views\LandingPage;
 
 use App\Views\LandingPage\Partials\BaseLandingPage;
-use Config\RoutesConstant;
+use App\Views\ViewRoutesContract;
 
 class LandingPageServices extends BaseLandingPage
 {
@@ -12,7 +12,7 @@ class LandingPageServices extends BaseLandingPage
         $this->startHtmlParsing(); ?>
 
         <!-- HOME -->
-        <section class="section-hero overlay inner-page bg-image" style="background-image: url('<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/hanggar1.jpeg') ?>');" id="home-section">
+        <section class="section-hero overlay inner-page bg-image" style="background-image: url('<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/hanggar1.jpeg') ?>');" id="home-section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
@@ -26,7 +26,7 @@ class LandingPageServices extends BaseLandingPage
             </div>
         </section>
 
-        <section class="py-5 bg-image overlay-primary fixed overlay" id="next" style="background-image: url('<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/hanggar2.jpeg') ?>');">
+        <section class="py-5 bg-image overlay-primary fixed overlay" id="next" style="background-image: url('<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/hanggar2.jpeg') ?>');">
             <div class="container">
                 <div class="row mb-6 justify-content-center">
                     <div class="col-md-12 text-center">
@@ -43,7 +43,7 @@ class LandingPageServices extends BaseLandingPage
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-5 mb-lg-0">
-                        <img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/1.jpeg') ?>" alt="Image" class="img-fluid img-shadow">
+                        <img src="<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/1.jpeg') ?>" alt="Image" class="img-fluid img-shadow">
                         </a>
                     </div>
                     <div class="col-lg-5 ml-auto">
@@ -56,7 +56,7 @@ class LandingPageServices extends BaseLandingPage
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-5 mb-lg-0 order-md-2">
-                        <img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/2.jpeg') ?>" alt="Image" class="img-fluid img-shadow">
+                        <img src="<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/2.jpeg') ?>" alt="Image" class="img-fluid img-shadow">
                         </a>
                     </div>
                     <div class="col-lg-5 mr-auto order-md-1  mb-5 mb-lg-0">
@@ -68,7 +68,7 @@ class LandingPageServices extends BaseLandingPage
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-5 mb-lg-0">
-                        <img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/3.jpeg') ?>" alt="Image" class="img-fluid img-shadow">
+                        <img src="<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/3.jpeg') ?>" alt="Image" class="img-fluid img-shadow">
                         </a>
                     </div>
                     <div class="col-lg-5 ml-auto">
@@ -83,7 +83,7 @@ class LandingPageServices extends BaseLandingPage
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-5 mb-lg-0 order-md-2">
-                        <img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/4.jpeg') ?>" alt="Image" class="img-fluid img-shadow">
+                        <img src="<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/4.jpeg') ?>" alt="Image" class="img-fluid img-shadow">
                         </a>
                     </div>
                     <div class="col-lg-5 mr-auto order-md-1  mb-5 mb-lg-0">
@@ -98,7 +98,7 @@ class LandingPageServices extends BaseLandingPage
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-5 mb-lg-0">
-                        <img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/5.jpeg') ?>" alt="Image" class="img-fluid img-shadow">
+                        <img src="<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/5.jpeg') ?>" alt="Image" class="img-fluid img-shadow">
                         </a>
                     </div>
                     <div class="col-lg-5 ml-auto">
@@ -112,7 +112,7 @@ class LandingPageServices extends BaseLandingPage
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-5 mb-lg-0 order-md-2">
-                        <img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/6.jpeg') ?>" alt="Image" class="img-fluid img-shadow">
+                        <img src="<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/6.jpeg') ?>" alt="Image" class="img-fluid img-shadow">
                         </a>
                     </div>
                     <div class="col-lg-5 mr-auto order-md-1  mb-5 mb-lg-0">
@@ -133,7 +133,7 @@ class LandingPageServices extends BaseLandingPage
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-5 mb-lg-0">
-                        <img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/7.jpeg') ?>" alt="Image" class="img-fluid img-shadow">
+                        <img src="<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/7.jpeg') ?>" alt="Image" class="img-fluid img-shadow">
                         </a>
                     </div>
                     <div class="col-lg-5 ml-auto">
@@ -147,7 +147,7 @@ class LandingPageServices extends BaseLandingPage
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-5 mb-lg-0 order-md-2">
-                        <img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/8.jpeg') ?>" alt="Image" class="img-fluid img-shadow">
+                        <img src="<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/8.jpeg') ?>" alt="Image" class="img-fluid img-shadow">
                         </a>
                     </div>
                     <div class="col-lg-5 mr-auto order-md-1  mb-5 mb-lg-0">
@@ -164,7 +164,7 @@ class LandingPageServices extends BaseLandingPage
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-5 mb-lg-0">
-                        <img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/9.jpeg') ?>" alt="Image" class="img-fluid img-shadow">
+                        <img src="<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/9.jpeg') ?>" alt="Image" class="img-fluid img-shadow">
                         </a>
                     </div>
                     <div class="col-lg-5 ml-auto">
@@ -178,7 +178,7 @@ class LandingPageServices extends BaseLandingPage
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-5 mb-lg-0 order-md-2">
-                        <img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/10.jpeg') ?>" alt="Image" class="img-fluid img-shadow">
+                        <img src="<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/10.jpeg') ?>" alt="Image" class="img-fluid img-shadow">
                         </a>
                     </div>
                     <div class="col-lg-5 mr-auto order-md-1  mb-5 mb-lg-0">
@@ -190,7 +190,7 @@ class LandingPageServices extends BaseLandingPage
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-5 mb-lg-0">
-                        <img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/13.jpeg') ?>" alt="Image" class="img-fluid img-shadow">
+                        <img src="<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/13.jpeg') ?>" alt="Image" class="img-fluid img-shadow">
                         </a>
                     </div>
                     <div class="col-lg-5 ml-auto">
@@ -202,7 +202,7 @@ class LandingPageServices extends BaseLandingPage
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-5 mb-lg-0 order-md-2">
-                        <img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/11.jpeg') ?>" alt="Image" class="img-fluid img-shadow">
+                        <img src="<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/11.jpeg') ?>" alt="Image" class="img-fluid img-shadow">
                         </a>
                     </div>
                     <div class="col-lg-5 mr-auto order-md-1  mb-5 mb-lg-0">
@@ -215,7 +215,7 @@ class LandingPageServices extends BaseLandingPage
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-5 mb-lg-0">
-                        <img src="<?= base_url(RoutesConstant::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/12.jpeg') ?>" alt="Image" class="img-fluid img-shadow">
+                        <img src="<?= base_url(ViewRoutesContract::LANDINGPAGE_ASSETS_RELATIVE_PATH . 'images/azmi/12.jpeg') ?>" alt="Image" class="img-fluid img-shadow">
                         </a>
                     </div>
                     <div class="col-lg-5 ml-auto">
